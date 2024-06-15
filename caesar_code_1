@@ -1,0 +1,18 @@
+text_list = (input('Введите текст')).split(' ')
+# text = input()
+lowercase_letters_eng = list(str('abcdefghijklmnopqrstuvwxyz'))
+uppercase_letters_eng = list(str('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+
+
+def change_char(char, step):
+
+        if char in lowercase_letters_eng:
+            return lowercase_letters_eng[(lowercase_letters_eng.index(j[i]) + step) % 26]
+        elif char in uppercase_letters_eng:
+            return uppercase_letters_eng[(uppercase_letters_eng.index(j[i]) + step) % 26]
+        else:
+            print(char)
+
+for i in text_list:
+    for j in range(len(i)):
+        print('1')
